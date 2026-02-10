@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-info {
+    display: flex;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.info-item span:last-child {
+    color: #667eea;
+    font-size: 24px;
+}
+
+#gameCanvas {
+    border: 3px solid #fff;
+    background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: none;
+}
+
+.controls {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls p {
+    margin: 5px 0;
+}
+
+.controls strong {
+    color: #667eea;
+}
+
+.game-over-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.game-over-screen.hidden {
+    display: none;
+}
+
+.game-over-content {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.game-over-content h1 {
+    color: #764ba2;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.game-over-content p {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.game-over-content button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.game-over-content button:hover {
+    background: #764ba2;
+}

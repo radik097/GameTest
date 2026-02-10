@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog vs Flies - 2D Game</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <div class="info-item">
+                <span>Score:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="info-item">
+                <span>Lives:</span>
+                <span id="lives">3</span>
+            </div>
+            <div class="info-item">
+                <span>Level:</span>
+                <span id="level">1</span>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <p><strong>Controls:</strong></p>
+            <p>Arrow Keys or WASD to move | Space to shoot</p>
+        </div>
+        <div id="gameOverScreen" class="game-over-screen hidden">
+            <div class="game-over-content">
+                <h1>Game Over!</h1>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <p>Level Reached: <span id="finalLevel">1</span></p>
+                <button onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="static/scripts.js"></script>
+</body>
+</html>
